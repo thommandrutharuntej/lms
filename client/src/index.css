@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+@import "tailwindcss";
+
+:root {
+  --color-primary: #2563eb;
+  --color-secondary: #1e40af;
+  --color-bg: #f9fafb;
+  --color-surface: #ffffff;
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+  --color-border: #e5e7eb;
+  --color-accent: #22c55e;
+}
+
+html {
+  background: var(--color-bg);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.24);
+  color: #111827;
+}
+
+*{
+  font-family: Outfit, sans-serif;
+}
+
+/* Rich Text Formatting */
+.rich-text p {
+  margin-bottom: 1rem;
+}
+.rich-text ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.rich-text li {
+  margin-bottom: 0.25rem;
+}
+.rich-text strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
